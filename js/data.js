@@ -81,29 +81,7 @@ const GameData = {
     words: [],
     categories: [],
 
-    /**
-     * Parse CSV text into structured data
-     * @param {string} csvText - Raw CSV content
-     * @returns {Array} Parsed word objects
-     */
-    parseCSV(csvText) {
-        const lines = csvText.trim().split('\n');
-        const headers = lines[0].split(',');
-        const result = [];
 
-        for (let i = 1; i < lines.length; i++) {
-            const values = lines[i].split(',');
-            if (values.length >= 3) {
-                result.push({
-                    category: values[0].trim(),
-                    citizenWord: values[1].trim(),
-                    imposterWord: values[2].trim()
-                });
-            }
-        }
-
-        return result;
-    },
 
     /**
      * Load words from embedded WORD_DATA array or use categoryIcons as fallback

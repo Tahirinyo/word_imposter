@@ -12,25 +12,57 @@ Object.assign(UI, {
         const overlay = Utils.createElement('div', { className: 'modal-overlay' });
 
         overlay.innerHTML = `
-            <div class="modal" style="max-width: 400px;">
+            <div class="modal how-to-play-modal" style="max-width: 420px;">
                 <h2 class="modal-title">📖 Nasıl Oynanır?</h2>
-                <div style="text-align: left; margin-bottom: var(--space-lg);">
-                    <p style="margin-bottom: var(--space-md); color: var(--text-secondary);">
-                        <strong style="color: var(--color-citizen);">👤 Vatandaşlar:</strong><br>
-                        Aynı kelimeyi alır. Hainleri ve Gizemlileri bulmaya çalışır.
-                    </p>
-                    <p style="margin-bottom: var(--space-md); color: var(--text-secondary);">
-                        <strong style="color: var(--color-imposter);">🎭 Hainler:</strong><br>
-                        Benzer ama farklı bir kelime alır. Vatandaş gibi davranmaya çalışır.
-                    </p>
-                    <p style="margin-bottom: var(--space-md); color: var(--text-secondary);">
-                        <strong style="color: var(--color-mrwhite);">❓ Gizemli:</strong><br>
-                        Sadece kategoriyi bilir. Kelimeyi tahmin etmeye çalışır.
-                    </p>
-                    <p style="color: var(--text-secondary);">
-                        <strong>🗣️ Açıklama:</strong> Her oyuncu sırayla kelimesini TEK KELİME ile açıklar.
-                    </p>
+                
+                <div class="how-to-section">
+                    <h3 class="how-to-heading">🎯 Amaç</h3>
+                    <p>Hainleri ve Gizemlileri bul, oyundan ele!</p>
                 </div>
+                
+                <div class="how-to-section">
+                    <h3 class="how-to-heading">👥 Roller</h3>
+                    <div class="role-cards">
+                        <div class="role-card citizen">
+                            <span class="role-icon">👤</span>
+                            <span class="role-label">Vatandaş</span>
+                            <span class="role-desc">Aynı kelime</span>
+                        </div>
+                        <div class="role-card imposter">
+                            <span class="role-icon">🎭</span>
+                            <span class="role-label">Hain</span>
+                            <span class="role-desc">Benzer kelime</span>
+                        </div>
+                        <div class="role-card mrwhite">
+                            <span class="role-icon">❓</span>
+                            <span class="role-label">Gizemli</span>
+                            <span class="role-desc">Sadece kategori</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="how-to-section">
+                    <h3 class="how-to-heading">🔄 Oyun Akışı</h3>
+                    <ol class="how-to-steps">
+                        <li>Herkes kartını görür</li>
+                        <li>Sırayla <strong>TEK KELİME</strong> ile açıkla</li>
+                        <li>Tartış ve şüphelen</li>
+                        <li>Herkes oy verir</li>
+                        <li>En çok oy alan elenir</li>
+                    </ol>
+                </div>
+                
+                <div class="how-to-section">
+                    <h3 class="how-to-heading">⚖️ Berabere</h3>
+                    <p>Eşit oy çıkarsa beraberlik bozulana kadar tekrar oylama yapılır.</p>
+                </div>
+                
+                <div class="how-to-section">
+                    <h3 class="how-to-heading">🏆 Kazanma</h3>
+                    <p><strong style="color: var(--color-citizen);">Vatandaşlar:</strong> Tüm hainler elenirse</p>
+                    <p><strong style="color: var(--color-imposter);">Hainler:</strong> Vatandaşlarla eşit kalırsa</p>
+                </div>
+                
                 <button class="btn btn-primary btn-block" id="close-modal">Anladım!</button>
             </div>
         `;
@@ -45,47 +77,7 @@ Object.assign(UI, {
         });
     },
 
-    // =====================================
-    // STATS MODAL
-    // =====================================
-    showStats() {
-        const overlay = Utils.createElement('div', { className: 'modal-overlay' });
 
-        overlay.innerHTML = `
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>📊 İstatistikler</h2>
-                    <button class="modal-close" id="close-stats">&times;</button>
-                </div>
-                ${Score.renderStatsHTML()}
-                <div style="padding: var(--space-lg); padding-top: 0;">
-                    <button class="btn btn-danger btn-block btn-sm" id="btn-reset-stats">
-                        🗑️ İstatistikleri Sıfırla
-                    </button>
-                </div>
-            </div>
-        `;
-
-        this.app.appendChild(overlay);
-
-        // Close modal
-        overlay.addEventListener('click', (e) => {
-            if (e.target === overlay || e.target.id === 'close-stats') {
-                Audio.feedback('click', 'light');
-                overlay.remove();
-            }
-        });
-
-        // Reset stats button
-        document.getElementById('btn-reset-stats').addEventListener('click', () => {
-            if (confirm('Tüm istatistikler silinecek. Emin misin?')) {
-                Audio.feedback('success', 'medium');
-                Score.resetStats();
-                overlay.remove();
-                this.showStats(); // Refresh stats view
-            }
-        });
-    },
 
     // =====================================
     // SETTINGS MODAL

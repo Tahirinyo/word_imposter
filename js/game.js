@@ -75,13 +75,7 @@ const Game = {
         this.state.phase = phase;
     },
 
-    /**
-     * Set selected category (legacy - for single category mode)
-     * @param {string} category - Category name
-     */
-    selectCategory(category) {
-        this.state.category = category;
-    },
+
 
     /**
      * Toggle a category in selectedCategories
@@ -356,33 +350,11 @@ const Game = {
         return 'continue';
     },
 
-    /**
-     * Restart with same players and new word
-     */
     restartWithNewWord() {
         this.state.roundNumber = 1;
         this.state.eliminatedPlayer = null;
         this.state.winner = null;
         this.distributeRoles();
-        this.state.phase = 'reveal';
-    },
-
-    /**
-     * Restart with same players and same word
-     */
-    restartSameWord() {
-        // Reset player states
-        this.state.players.forEach(player => {
-            player.alive = true;
-            player.hasSeenRole = false;
-        });
-
-        // Shuffle player order
-        this.state.players = Utils.shuffle(this.state.players);
-        this.state.currentRevealIndex = 0;
-        this.state.roundNumber = 1;
-        this.state.eliminatedPlayer = null;
-        this.state.winner = null;
         this.state.phase = 'reveal';
     }
 };

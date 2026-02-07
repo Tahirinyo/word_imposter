@@ -1639,3 +1639,171 @@ body {
         opacity: 0;
     }
 }
+
+/* ============================
+   How To Play Modal
+   ============================ */
+.how-to-play-modal {
+    max-height: 90vh;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.how-to-section {
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-md);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.how-to-section:last-of-type {
+    border-bottom: none;
+}
+
+.how-to-heading {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+    color: var(--text-primary);
+}
+
+.how-to-section p {
+    color: var(--text-secondary);
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-xs);
+}
+
+.role-cards {
+    display: flex;
+    gap: var(--space-sm);
+    justify-content: center;
+}
+
+.role-card {
+    flex: 1;
+    padding: var(--space-sm);
+    border-radius: var(--radius-md);
+    text-align: center;
+    background: var(--bg-glass);
+    border: 2px solid;
+}
+
+.role-card.citizen {
+    border-color: var(--color-citizen);
+}
+
+.role-card.imposter {
+    border-color: var(--color-imposter);
+}
+
+.role-card.mrwhite {
+    border-color: var(--color-mrwhite);
+}
+
+.role-card .role-icon {
+    display: block;
+    font-size: 24px;
+    margin-bottom: var(--space-xs);
+}
+
+.role-card .role-label {
+    display: block;
+    font-weight: 600;
+    font-size: var(--font-size-xs);
+    margin-bottom: 2px;
+}
+
+.role-card .role-desc {
+    display: block;
+    font-size: var(--font-size-xs);
+    color: var(--text-muted);
+}
+
+.how-to-steps {
+    padding-left: var(--space-lg);
+    color: var(--text-secondary);
+    font-size: var(--font-size-sm);
+}
+
+.how-to-steps li {
+    margin-bottom: var(--space-xs);
+}
+
+.how-to-steps strong {
+    color: var(--accent-gold);
+}
+
+/* ============================
+   Vote Summary Screen
+   ============================ */
+.vote-results {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    margin: var(--space-lg) 0;
+}
+
+.vote-result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-md);
+    background: var(--bg-glass);
+    border-radius: var(--radius-md);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.vote-result.eliminated {
+    border-color: var(--accent-rose);
+    background: rgba(244, 63, 94, 0.1);
+}
+
+.vote-result.tied {
+    border-color: var(--accent-gold);
+    background: rgba(245, 158, 11, 0.1);
+}
+
+.vote-result-name {
+    font-weight: 600;
+}
+
+.vote-result-count {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--accent-primary);
+}
+
+.tie-info {
+    text-align: center;
+    padding: var(--space-lg);
+    background: rgba(245, 158, 11, 0.1);
+    border-radius: var(--radius-lg);
+    border: 2px solid var(--accent-gold);
+    margin: var(--space-lg) 0;
+}
+
+.tie-info p {
+    margin-bottom: var(--space-sm);
+}
+
+.tie-info strong {
+    color: var(--accent-gold);
+}
+
+.elimination-preview {
+    text-align: center;
+    padding: var(--space-xl);
+    margin: var(--space-lg) 0;
+}
+
+.eliminated-preview-name {
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    color: var(--accent-rose);
+    margin-top: var(--space-sm);
+}
+
+.vote-check {
+    color: var(--accent-emerald);
+    font-weight: bold;
+    font-size: var(--font-size-lg);
+}

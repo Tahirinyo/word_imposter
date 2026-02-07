@@ -401,10 +401,77 @@ const Room = {
     },
 
     /**
-     * Select vote target
+     * Submit vote for a player (each player submits their own vote)
+     * @param {string} targetId - Target player ID to vote for
+     */
+    async submitVote(targetId) {
+        if (!this.roomCode || !this.playerId) return;
+        await FirebaseConfig.ref(`rooms/${this.roomCode}/gameState/votes/${this.playerId}`).set(targetId);
+    },
+
+    /**
+     * Get vote counts for all players
+     * @returns {Object} Map of playerId to vote count
+     */
+    getVoteCounts() {
+        const votes = this.currentRoom?.gameState?.votes || {};
+        const counts = {};
+
+        Object.values(votes).forEach(targetId => {
+            if (targetId) {
+                counts[targetId] = (counts[targetId] || 0) + 1;
+            }
+        });
+
+        return counts;
+    },
+
+    /**
+     * Check if all alive players have voted
+     * @returns {boolean}
+     */
+    checkAllVoted() {
+        const alivePlayers = this.getAlivePlayers();
+        const votes = this.currentRoom?.gameState?.votes || {};
+
+        return alivePlayers.every(player => votes[player.id] !== undefined);
+    },
+
+    /**
+     * Get my current vote
+     * @returns {string|null} Target player ID or null
+     */
+    getMyVote() {
+        const votes = this.currentRoom?.gameState?.votes || {};
+        return votes[this.playerId] || null;
+    },
+
+    /**
+     * Get players with the highest vote count
+     * @returns {Array} Array of player IDs with highest votes (may be multiple if tied)
+     */
+    getTiedPlayers() {
+        const counts = this.getVoteCounts();
+        const maxVotes = Math.max(...Object.values(counts), 0);
+
+        if (maxVotes === 0) return [];
+
+        return Object.keys(counts).filter(id => counts[id] === maxVotes);
+    },
+
+    /**
+     * Clear all votes (for re-voting on tie)
+     */
+    async clearVotes() {
+        if (!this.roomCode) return;
+        await FirebaseConfig.ref(`rooms/${this.roomCode}/gameState/votes`).remove();
+    },
+
+    /**
+     * Set the selected vote result (after voting is complete)
      * @param {string} targetId - Target player ID
      */
-    async selectVote(targetId) {
+    async setSelectedVote(targetId) {
         if (!this.roomCode) return;
         await FirebaseConfig.ref(`rooms/${this.roomCode}/gameState/selectedVote`).set(targetId);
     },
@@ -483,37 +550,7 @@ const Room = {
         await this.startGame();
     },
 
-    /**
-     * Restart with same word
-     */
-    async restartSameWord() {
-        if (!this.isHost || !this.roomCode) return;
 
-        const room = this.currentRoom;
-        const players = Object.values(room.players || {});
-
-        const updates = {};
-
-        // Reset all players
-        players.forEach(player => {
-            updates[`players/${player.id}/alive`] = true;
-            updates[`players/${player.id}/hasSeenRole`] = false;
-        });
-
-        // Shuffle reveal order
-        const shuffledOrder = Utils.shuffle(players.map(p => p.id));
-
-        updates['status'] = 'playing';
-        updates['gameState/phase'] = 'reveal';
-        updates['gameState/currentRevealIndex'] = 0;
-        updates['gameState/roundNumber'] = 1;
-        updates['gameState/eliminatedPlayerId'] = null;
-        updates['gameState/selectedVote'] = null;
-        updates['gameState/winner'] = null;
-        updates['gameState/revealOrder'] = shuffledOrder;
-
-        await FirebaseConfig.ref(`rooms/${this.roomCode}`).update(updates);
-    },
 
     /**
      * Get current player data

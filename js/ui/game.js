@@ -161,39 +161,48 @@ Object.assign(UI, {
         const screen = Utils.createElement('div', { className: 'screen' });
         const room = Room.currentRoom;
         const alivePlayers = Room.getAlivePlayers();
-        const selectedVote = room.gameState?.selectedVote;
+        const myVote = Room.getMyVote();
+        const allVoted = Room.checkAllVoted();
+        const myPlayerId = Room.playerId;
 
-        let optionsHTML = alivePlayers.map((player, index) => `
-            <div class="vote-option ${selectedVote === player.id ? 'selected' : ''}" data-id="${player.id}">
-                <div class="vote-avatar">${Utils.getAvatar(index)}</div>
-                <span class="vote-name">${player.name}${player.id === Room.playerId ? ' (Sen)' : ''}</span>
+        // If all voted, show vote summary
+        if (allVoted) {
+            this.renderVoteSummary(screen);
+            return;
+        }
+
+        // Filter out self from voting options (can't vote for yourself)
+        const votableOptions = alivePlayers.filter(p => p.id !== myPlayerId);
+
+        let optionsHTML = votableOptions.map((player, index) => `
+            <div class="vote-option ${myVote === player.id ? 'selected' : ''}" data-id="${player.id}">
+                <div class="vote-avatar">${Utils.getAvatar(alivePlayers.indexOf(player))}</div>
+                <span class="vote-name">${player.name}</span>
+                ${myVote === player.id ? '<span class="vote-check">✓</span>' : ''}
             </div>
         `).join('');
+
+        // Count how many have voted
+        const votes = room.gameState?.votes || {};
+        const votedCount = Object.keys(votes).length;
+        const totalVoters = alivePlayers.length;
 
         screen.innerHTML = `
             ${Room.isHost ? '<button class="back-button" id="btn-back">←</button>' : ''}
             <div class="voting-header" style="margin-top: var(--space-xl);">
-                <h1 class="voting-title">Kimi Elemek İstiyorsunuz?</h1>
-                <p class="voting-subtitle">Oybirliği ile karar verin</p>
+                <h1 class="voting-title">Kimi Elemek İstiyorsun?</h1>
+                <p class="voting-subtitle">${votedCount}/${totalVoters} oyuncu oy verdi</p>
             </div>
             
             <div class="vote-options">
                 ${optionsHTML}
             </div>
             
-            ${Room.isHost ? `
-                <div style="margin-top: auto; padding-top: var(--space-xl);">
-                    <button class="btn btn-danger btn-lg btn-block" id="btn-eliminate" ${!selectedVote ? 'disabled style="opacity: 0.5"' : ''}>
-                        ⚡ Oyu Kullan
-                    </button>
-                </div>
-            ` : `
-                <div style="margin-top: auto; padding-top: var(--space-xl);">
-                    <p class="text-center text-muted">
-                        ${selectedVote ? 'Seçilen: ' + (alivePlayers.find(p => p.id === selectedVote)?.name || '') : 'Oda sahibi seçim yapıyor...'}
-                    </p>
-                </div>
-            `}
+            <div style="margin-top: auto; padding-top: var(--space-xl);">
+                ${myVote
+                ? '<p class="text-center text-muted">✅ Oyun verildi. Diğer oyuncular bekleniyor...</p>'
+                : '<p class="text-center text-muted">Bir oyuncu seçin</p>'}
+            </div>
         `;
 
         this.app.appendChild(screen);
@@ -202,56 +211,129 @@ Object.assign(UI, {
         if (Room.isHost && document.getElementById('btn-back')) {
             document.getElementById('btn-back').addEventListener('click', async () => {
                 Audio.feedback('click', 'light');
-                await Room.selectVote(null);
+                await Room.clearVotes();
                 await Room.setPhase('lobby');
             });
         }
 
-        // Vote selection (host controls)
-        if (Room.isHost) {
-            document.querySelectorAll('.vote-option').forEach(option => {
-                option.addEventListener('click', async () => {
-                    Audio.feedback('vote', 'light');
-                    await Room.selectVote(option.dataset.id);
-                });
+        // Vote selection (all players can vote)
+        document.querySelectorAll('.vote-option').forEach(option => {
+            option.addEventListener('click', async () => {
+                if (myVote) return; // Already voted
+                Audio.feedback('vote', 'light');
+                await Room.submitVote(option.dataset.id);
             });
-
-            document.getElementById('btn-eliminate').addEventListener('click', () => {
-                if (selectedVote) {
-                    this.showMultiplayerConfirmEliminate();
-                }
-            });
-        }
+        });
     },
 
-    showMultiplayerConfirmEliminate() {
-        const room = Room.currentRoom;
-        const player = Room.getPlayers().find(p => p.id === room.gameState?.selectedVote);
-        if (!player) return;
+    // =====================================
+    // VOTE SUMMARY SCREEN
+    // =====================================
+    renderVoteSummary(screen) {
+        const alivePlayers = Room.getAlivePlayers();
+        const voteCounts = Room.getVoteCounts();
+        const tiedPlayers = Room.getTiedPlayers();
+        const isTie = tiedPlayers.length > 1;
 
-        const overlay = Utils.createElement('div', { className: 'modal-overlay' });
-        overlay.innerHTML = `
-            <div class="modal">
-                <h2 class="modal-title">⚠️ Emin misin?</h2>
-                <p class="modal-text"><strong>${player.name}</strong> oyundan elenecek!</p>
-                <div class="modal-buttons">
-                    <button class="btn btn-secondary" id="cancel-eliminate">Vazgeç</button>
-                    <button class="btn btn-danger" id="confirm-eliminate">Evet, Ele!</button>
-                </div>
+        // Sort players by vote count (highest first)
+        const sortedPlayers = alivePlayers
+            .map(p => ({ ...p, votes: voteCounts[p.id] || 0 }))
+            .filter(p => p.votes > 0)
+            .sort((a, b) => b.votes - a.votes);
+
+        let resultsHTML = sortedPlayers.map((player, index) => `
+            <div class="vote-result ${tiedPlayers.includes(player.id) ? 'tied' : ''} ${index === 0 && !isTie ? 'eliminated' : ''}">
+                <span class="vote-result-name">${player.name}</span>
+                <span class="vote-result-count">${player.votes} oy</span>
             </div>
-        `;
+        `).join('');
 
-        this.app.appendChild(overlay);
+        if (isTie) {
+            // Tie - show tie message
+            Audio.feedback('error', 'medium');
+            const tiedNames = tiedPlayers.map(id => alivePlayers.find(p => p.id === id)?.name).join(', ');
 
-        document.getElementById('cancel-eliminate').addEventListener('click', () => {
-            Audio.feedback('click', 'light');
-            overlay.remove();
-        });
-        document.getElementById('confirm-eliminate').addEventListener('click', async () => {
-            Audio.feedback('eliminate', 'eliminate');
-            overlay.remove();
-            await Room.executeElimination();
-        });
+            screen.innerHTML = `
+                <div class="voting-header" style="margin-top: var(--space-xl);">
+                    <h1 class="voting-title">⚖️ Berabere!</h1>
+                    <p class="voting-subtitle">Oylar eşit çıktı</p>
+                </div>
+                
+                <div class="vote-results">
+                    ${resultsHTML}
+                </div>
+                
+                <div class="tie-info">
+                    <p>Beraberlik: <strong>${tiedNames}</strong></p>
+                    <p class="text-muted">Beraberlik bozulana kadar tekrar oylama yapılacak.</p>
+                </div>
+                
+                ${Room.isHost ? `
+                    <div style="margin-top: auto; padding-top: var(--space-xl);">
+                        <button class="btn btn-primary btn-lg btn-block" id="btn-revote">
+                            🔄 Tartışmaya Dön
+                        </button>
+                    </div>
+                ` : `
+                    <div style="margin-top: auto; padding-top: var(--space-xl);">
+                        <p class="text-center text-muted">Oda sahibi tartışmaya dönebilir...</p>
+                    </div>
+                `}
+            `;
+
+            this.app.appendChild(screen);
+
+            if (Room.isHost && document.getElementById('btn-revote')) {
+                document.getElementById('btn-revote').addEventListener('click', async () => {
+                    Audio.feedback('click', 'light');
+                    await Room.clearVotes();
+                    await Room.setPhase('lobby');
+                });
+            }
+        } else {
+            // No tie - show winner and proceed to elimination
+            const eliminatedId = tiedPlayers[0];
+            const eliminatedPlayer = alivePlayers.find(p => p.id === eliminatedId);
+
+            Audio.feedback('vote', 'medium');
+
+            screen.innerHTML = `
+                <div class="voting-header" style="margin-top: var(--space-xl);">
+                    <h1 class="voting-title">📊 Oylama Sonucu</h1>
+                </div>
+                
+                <div class="vote-results">
+                    ${resultsHTML}
+                </div>
+                
+                <div class="elimination-preview">
+                    <p>Elenen oyuncu:</p>
+                    <h2 class="eliminated-preview-name">${eliminatedPlayer?.name || '?'}</h2>
+                </div>
+                
+                ${Room.isHost ? `
+                    <div style="margin-top: auto; padding-top: var(--space-xl);">
+                        <button class="btn btn-danger btn-lg btn-block" id="btn-confirm-eliminate">
+                            ⚡ Devam Et
+                        </button>
+                    </div>
+                ` : `
+                    <div style="margin-top: auto; padding-top: var(--space-xl);">
+                        <p class="text-center text-muted">Oda sahibi devam ettirecek...</p>
+                    </div>
+                `}
+            `;
+
+            this.app.appendChild(screen);
+
+            if (Room.isHost && document.getElementById('btn-confirm-eliminate')) {
+                document.getElementById('btn-confirm-eliminate').addEventListener('click', async () => {
+                    Audio.feedback('eliminate', 'eliminate');
+                    await Room.setSelectedVote(eliminatedId);
+                    await Room.executeElimination();
+                });
+            }
+        }
     },
 
     // =====================================
@@ -313,10 +395,7 @@ Object.assign(UI, {
 
         Audio.feedback(didIWin ? 'victory' : 'gameOver', didIWin ? 'victory' : 'heavy');
 
-        // Record game result for stats
-        if (myPlayer) {
-            Score.recordGame(didIWin ? 'win' : 'lose', myPlayer.role, winner);
-        }
+
 
         screen.innerHTML = `
             <div class="gameover-icon">${isCitizensWin ? '🎉' : '😈'}</div>
@@ -343,9 +422,6 @@ Object.assign(UI, {
                     <button class="btn btn-primary btn-block" id="btn-new-word">
                         🔄 Yeni Kelime ile Oyna
                     </button>
-                    <button class="btn btn-secondary btn-block" id="btn-same-word">
-                        🔁 Aynı Kelime ile Oyna
-                    </button>
                     <button class="btn btn-secondary btn-block" id="btn-lobby">
                         🏠 Bekleme Odasına Dön
                     </button>
@@ -363,11 +439,6 @@ Object.assign(UI, {
             document.getElementById('btn-new-word').addEventListener('click', async () => {
                 Audio.feedback('newRound', 'success');
                 await Room.restartWithNewWord();
-            });
-
-            document.getElementById('btn-same-word').addEventListener('click', async () => {
-                Audio.feedback('newRound', 'success');
-                await Room.restartSameWord();
             });
 
             document.getElementById('btn-lobby').addEventListener('click', async () => {

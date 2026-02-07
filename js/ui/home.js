@@ -29,9 +29,7 @@ Object.assign(UI, {
                 <button class="btn btn-ghost btn-block" id="btn-how-to-play">
                     📖 Nasıl Oynanır?
                 </button>
-                <button class="btn btn-ghost btn-block" id="btn-stats">
-                    📊 İstatistikler
-                </button>
+
                 <button class="btn btn-ghost btn-block" id="btn-settings">
                     ⚙️ Ayarlar
                 </button>
@@ -58,10 +56,7 @@ Object.assign(UI, {
             this.showHowToPlay();
         });
 
-        document.getElementById('btn-stats').addEventListener('click', () => {
-            Audio.feedback('click', 'light');
-            this.showStats();
-        });
+
 
         document.getElementById('btn-settings').addEventListener('click', () => {
             Audio.feedback('click', 'light');
