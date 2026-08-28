@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment variables (keep secrets out of git)
+.env
+.env.local
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+firebase-debug.log*
+coverage/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Firebase local cache
+.firebase/

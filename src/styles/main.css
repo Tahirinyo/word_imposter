@@ -1,0 +1,16 @@
+/**
+ * Who Is the Impostor? - Main CSS Entry Point
+ * Imports all modular CSS files in correct order
+ */
+
+/* Design tokens */
+@import './variables.css';
+
+/* Base reset, utilities, typography */
+@import './base.css';
+
+/* Reusable components */
+@import './components.css';
+
+/* Screen-specific styles */
+@import './screens.css';

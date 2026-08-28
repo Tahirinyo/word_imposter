@@ -1,0 +1,154 @@
+/**
+ * Who Is the Impostor? - base styles
+ */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    overflow-x: hidden;
+    overscroll-behavior-y: none;
+    background: var(--bg-canvas);
+    color: var(--text-primary);
+    font-family: var(--font-family);
+    line-height: 1.5;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: linear-gradient(to bottom, black, transparent 72%);
+}
+
+button,
+input {
+    font: inherit;
+}
+
+#app {
+    display: flex;
+    min-height: 100vh;
+    min-height: 100dvh;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: var(--space-lg);
+}
+
+.flex-center { display: flex; align-items: center; justify-content: center; }
+.flex-between { display: flex; align-items: center; justify-content: space-between; }
+.flex-col { display: flex; flex-direction: column; }
+.gap-sm { gap: var(--space-sm); }
+.gap-md { gap: var(--space-md); }
+.gap-lg { gap: var(--space-lg); }
+.gap-xl { gap: var(--space-xl); }
+.text-center { text-align: center; }
+.text-muted { color: var(--text-muted); }
+.text-secondary { color: var(--text-secondary); }
+
+.screen {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 720px;
+    min-height: 100vh;
+    min-height: 100dvh;
+    margin: 0 auto;
+    padding:
+        max(1.5rem, env(safe-area-inset-top))
+        max(1rem, env(safe-area-inset-right))
+        max(1.5rem, env(safe-area-inset-bottom))
+        max(1rem, env(safe-area-inset-left));
+    flex-direction: column;
+    animation: fadeIn 240ms ease;
+}
+
+.title {
+    color: var(--text-primary);
+    font-size: var(--font-size-4xl);
+    font-weight: 780;
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+    text-align: center;
+}
+
+.subtitle {
+    margin-top: var(--space-sm);
+    color: var(--text-muted);
+    font-size: var(--font-size-lg);
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: var(--space-md);
+    font-size: var(--font-size-lg);
+    font-weight: 680;
+    letter-spacing: -0.01em;
+}
+
+.screen-footer { margin-top: auto; padding-top: var(--space-xl); }
+.discussion-screen .screen-footer { margin-top: clamp(1.5rem, 5vh, 2.5rem); }
+.page-heading { margin-top: 4rem; }
+.form-stack { margin-top: var(--space-xl); }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes eliminationPulse { 50% { transform: scale(1.015); } }
+
+::-webkit-scrollbar { width: 7px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 4px; }
+
+@media (min-width: 700px) {
+    #app {
+        justify-content: center;
+        padding: var(--space-lg);
+    }
+
+    .screen {
+        min-height: min(820px, calc(100dvh - 3rem));
+        padding: clamp(2rem, 4vw, 3.5rem);
+        border: 1px solid var(--border-subtle);
+        border-radius: 24px;
+        background: var(--bg-raised);
+        box-shadow: var(--shadow-lg);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

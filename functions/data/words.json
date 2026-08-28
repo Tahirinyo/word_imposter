@@ -1,0 +1,1482 @@
+[
+  {
+    "category": "Hayvanlar",
+    "citizenWord": "Köpek",
+    "imposterWord": "Kurt"
+  },
+  {
+    "category": "Hayvanlar",
+    "citizenWord": "Kedi",
+    "imposterWord": "Aslan"
+  },
+  {
+    "category": "Hayvanlar",
+    "citizenWord": "At",
+    "imposterWord": "Eşek"
+  },
+  {
+    "category": "Hayvanlar",
+    "citizenWord": "Kartal",
+    "imposterWord": "Şahin"
+  },
+  {
+    "category": "Hayvanlar",
+    "citizenWord": "Köpekbalığı",
+    "imposterWord": "Balina"
+  },
+  {
+    "category": "Hayvanlar",
+    "citizenWord": "Aslan",
+    "imposterWord": "Kaplan"
+  },
+  {
+    "category": "Hayvanlar",
+    "citizenWord": "Köpekbalığı",
+    "imposterWord": "Yunus"
+  },
+  {
+    "category": "Hayvanlar",
+    "citizenWord": "Ördek",
+    "imposterWord": "Kaz"
+  },
+  {
+    "category": "Hayvanlar",
+    "citizenWord": "Penguen",
+    "imposterWord": "Deniz aslanı"
+  },
+  {
+    "category": "Hayvanlar",
+    "citizenWord": "Kelebek",
+    "imposterWord": "Güve"
+  },
+  {
+    "category": "Hayvanlar",
+    "citizenWord": "Leopar",
+    "imposterWord": "Çita"
+  },
+  {
+    "category": "Hayvanlar",
+    "citizenWord": "Baykuş",
+    "imposterWord": "Yarasa"
+  },
+  {
+    "category": "Hayvanlar",
+    "citizenWord": "Örümcek",
+    "imposterWord": "Akrep"
+  },
+  {
+    "category": "Hayvanlar",
+    "citizenWord": "Yengeç",
+    "imposterWord": "Istakoz"
+  },
+  {
+    "category": "Hayvanlar",
+    "citizenWord": "Deve",
+    "imposterWord": "Lama"
+  },
+  {
+    "category": "Hayvanlar",
+    "citizenWord": "Tilki",
+    "imposterWord": "Çakal"
+  },
+  {
+    "category": "Yiyecekler",
+    "citizenWord": "Kahve",
+    "imposterWord": "Çay"
+  },
+  {
+    "category": "Yiyecekler",
+    "citizenWord": "Burger",
+    "imposterWord": "Sandviç"
+  },
+  {
+    "category": "Yiyecekler",
+    "citizenWord": "Pizza",
+    "imposterWord": "Makarna"
+  },
+  {
+    "category": "Yiyecekler",
+    "citizenWord": "Elma",
+    "imposterWord": "Armut"
+  },
+  {
+    "category": "Yiyecekler",
+    "citizenWord": "Kek",
+    "imposterWord": "Turta"
+  },
+  {
+    "category": "Yiyecekler",
+    "citizenWord": "Dondurma",
+    "imposterWord": "Yoğurt"
+  },
+  {
+    "category": "Yiyecekler",
+    "citizenWord": "Çorba",
+    "imposterWord": "Güveç"
+  },
+  {
+    "category": "Yiyecekler",
+    "citizenWord": "Pirinç",
+    "imposterWord": "Erişte"
+  },
+  {
+    "category": "Yiyecekler",
+    "citizenWord": "Kurabiye",
+    "imposterWord": "Bisküvi"
+  },
+  {
+    "category": "Yiyecekler",
+    "citizenWord": "Pankek",
+    "imposterWord": "Waffle"
+  },
+  {
+    "category": "Yiyecekler",
+    "citizenWord": "Tereyağı",
+    "imposterWord": "Margarin"
+  },
+  {
+    "category": "Yiyecekler",
+    "citizenWord": "Limon",
+    "imposterWord": "Misket limonu"
+  },
+  {
+    "category": "Yiyecekler",
+    "citizenWord": "Şeftali",
+    "imposterWord": "Kayısı"
+  },
+  {
+    "category": "Yiyecekler",
+    "citizenWord": "Soğan",
+    "imposterWord": "Sarımsak"
+  },
+  {
+    "category": "Yiyecekler",
+    "citizenWord": "Çilek",
+    "imposterWord": "Ahududu"
+  },
+  {
+    "category": "Yiyecekler",
+    "citizenWord": "Çikolata",
+    "imposterWord": "Vanilya"
+  },
+  {
+    "category": "Yiyecekler",
+    "citizenWord": "Bira",
+    "imposterWord": "Elma şarabı"
+  },
+  {
+    "category": "Yiyecekler",
+    "citizenWord": "Şarap",
+    "imposterWord": "Şampanya"
+  },
+  {
+    "category": "Yiyecekler",
+    "citizenWord": "Suşi",
+    "imposterWord": "Sashimi"
+  },
+  {
+    "category": "Mekanlar",
+    "citizenWord": "Okul",
+    "imposterWord": "Kütüphane"
+  },
+  {
+    "category": "Mekanlar",
+    "citizenWord": "Hastane",
+    "imposterWord": "Klinik"
+  },
+  {
+    "category": "Mekanlar",
+    "citizenWord": "Plaj",
+    "imposterWord": "Havuz"
+  },
+  {
+    "category": "Mekanlar",
+    "citizenWord": "Orman",
+    "imposterWord": "Park"
+  },
+  {
+    "category": "Mekanlar",
+    "citizenWord": "Sinema",
+    "imposterWord": "Tiyatro"
+  },
+  {
+    "category": "Mekanlar",
+    "citizenWord": "Otel",
+    "imposterWord": "Motel"
+  },
+  {
+    "category": "Mekanlar",
+    "citizenWord": "Havalimanı",
+    "imposterWord": "İstasyon"
+  },
+  {
+    "category": "Mekanlar",
+    "citizenWord": "Spor Salonu",
+    "imposterWord": "Stadyum"
+  },
+  {
+    "category": "Mekanlar",
+    "citizenWord": "Müze",
+    "imposterWord": "Galeri"
+  },
+  {
+    "category": "Mekanlar",
+    "citizenWord": "Kafe",
+    "imposterWord": "Restoran"
+  },
+  {
+    "category": "Mekanlar",
+    "citizenWord": "Hapishane",
+    "imposterWord": "Zindan"
+  },
+  {
+    "category": "Mekanlar",
+    "citizenWord": "Kale",
+    "imposterWord": "Saray"
+  },
+  {
+    "category": "Mekanlar",
+    "citizenWord": "Çiftlik",
+    "imposterWord": "Hayvanat bahçesi"
+  },
+  {
+    "category": "Mekanlar",
+    "citizenWord": "Süpermarket",
+    "imposterWord": "Pazar"
+  },
+  {
+    "category": "Mekanlar",
+    "citizenWord": "Kilise",
+    "imposterWord": "Katedral"
+  },
+  {
+    "category": "Mekanlar",
+    "citizenWord": "Mutfak",
+    "imposterWord": "Yemek Odası"
+  },
+  {
+    "category": "Mekanlar",
+    "citizenWord": "Yatak Odası",
+    "imposterWord": "Oturma Odası"
+  },
+  {
+    "category": "Mekanlar",
+    "citizenWord": "Dağ",
+    "imposterWord": "Tepe"
+  },
+  {
+    "category": "Mekanlar",
+    "citizenWord": "Nehir",
+    "imposterWord": "Göl"
+  },
+  {
+    "category": "Mekanlar",
+    "citizenWord": "Şehir",
+    "imposterWord": "Kasaba"
+  },
+  {
+    "category": "Meslekler ve Karakterler",
+    "citizenWord": "Doktor",
+    "imposterWord": "Hemşire"
+  },
+  {
+    "category": "Meslekler ve Karakterler",
+    "citizenWord": "Polis",
+    "imposterWord": "Güvenlik Görevlisi"
+  },
+  {
+    "category": "Meslekler ve Karakterler",
+    "citizenWord": "Öğretmen",
+    "imposterWord": "Profesör"
+  },
+  {
+    "category": "Meslekler ve Karakterler",
+    "citizenWord": "Oyuncu",
+    "imposterWord": "Yönetmen"
+  },
+  {
+    "category": "Meslekler ve Karakterler",
+    "citizenWord": "Pilot",
+    "imposterWord": "Şoför"
+  },
+  {
+    "category": "Meslekler ve Karakterler",
+    "citizenWord": "Şef",
+    "imposterWord": "Garson"
+  },
+  {
+    "category": "Meslekler ve Karakterler",
+    "citizenWord": "Sanatçı",
+    "imposterWord": "Tasarımcı"
+  },
+  {
+    "category": "Meslekler ve Karakterler",
+    "citizenWord": "Yazar",
+    "imposterWord": "Gazeteci"
+  },
+  {
+    "category": "Meslekler ve Karakterler",
+    "citizenWord": "Hakim",
+    "imposterWord": "Avukat"
+  },
+  {
+    "category": "Meslekler ve Karakterler",
+    "citizenWord": "Asker",
+    "imposterWord": "Casus"
+  },
+  {
+    "category": "Meslekler ve Karakterler",
+    "citizenWord": "Çiftçi",
+    "imposterWord": "Bahçıvan"
+  },
+  {
+    "category": "Meslekler ve Karakterler",
+    "citizenWord": "Şarkıcı",
+    "imposterWord": "Dansçı"
+  },
+  {
+    "category": "Meslekler ve Karakterler",
+    "citizenWord": "Kral",
+    "imposterWord": "Başkan"
+  },
+  {
+    "category": "Meslekler ve Karakterler",
+    "citizenWord": "Sihirbaz",
+    "imposterWord": "Palyaço"
+  },
+  {
+    "category": "Meslekler ve Karakterler",
+    "citizenWord": "Astronot",
+    "imposterWord": "Uzaylı"
+  },
+  {
+    "category": "Meslekler ve Karakterler",
+    "citizenWord": "Korsan",
+    "imposterWord": "Denizci"
+  },
+  {
+    "category": "Meslekler ve Karakterler",
+    "citizenWord": "Ninja",
+    "imposterWord": "Samuray"
+  },
+  {
+    "category": "Meslekler ve Karakterler",
+    "citizenWord": "Vampir",
+    "imposterWord": "Kurt Adam"
+  },
+  {
+    "category": "Meslekler ve Karakterler",
+    "citizenWord": "Hayalet",
+    "imposterWord": "Zombi"
+  },
+  {
+    "category": "Meslekler ve Karakterler",
+    "citizenWord": "Robot",
+    "imposterWord": "Siborg"
+  },
+  {
+    "category": "Eşyalar",
+    "citizenWord": "Sandalye",
+    "imposterWord": "Tabure"
+  },
+  {
+    "category": "Eşyalar",
+    "citizenWord": "Kalem",
+    "imposterWord": "Kurşun Kalem"
+  },
+  {
+    "category": "Eşyalar",
+    "citizenWord": "Fincan",
+    "imposterWord": "Kupa"
+  },
+  {
+    "category": "Eşyalar",
+    "citizenWord": "Çatal",
+    "imposterWord": "Kaşık"
+  },
+  {
+    "category": "Eşyalar",
+    "citizenWord": "Kapı",
+    "imposterWord": "Pencere"
+  },
+  {
+    "category": "Eşyalar",
+    "citizenWord": "Yatak",
+    "imposterWord": "Kanepe"
+  },
+  {
+    "category": "Eşyalar",
+    "citizenWord": "Lamba",
+    "imposterWord": "Mum"
+  },
+  {
+    "category": "Eşyalar",
+    "citizenWord": "Kitap",
+    "imposterWord": "Dergi"
+  },
+  {
+    "category": "Eşyalar",
+    "citizenWord": "Saat",
+    "imposterWord": "Kol Saati"
+  },
+  {
+    "category": "Eşyalar",
+    "citizenWord": "Ayna",
+    "imposterWord": "Tablo"
+  },
+  {
+    "category": "Eşyalar",
+    "citizenWord": "Sabun",
+    "imposterWord": "Şampuan"
+  },
+  {
+    "category": "Eşyalar",
+    "citizenWord": "Havlu",
+    "imposterWord": "Battaniye"
+  },
+  {
+    "category": "Eşyalar",
+    "citizenWord": "Anahtar",
+    "imposterWord": "Kilit"
+  },
+  {
+    "category": "Eşyalar",
+    "citizenWord": "Çanta",
+    "imposterWord": "Kutu"
+  },
+  {
+    "category": "Eşyalar",
+    "citizenWord": "Şapka",
+    "imposterWord": "Kask"
+  },
+  {
+    "category": "Eşyalar",
+    "citizenWord": "Gözlük",
+    "imposterWord": "Güneş Gözlüğü"
+  },
+  {
+    "category": "Eşyalar",
+    "citizenWord": "Şemsiye",
+    "imposterWord": "Yağmurluk"
+  },
+  {
+    "category": "Eşyalar",
+    "citizenWord": "Makas",
+    "imposterWord": "Bıçak"
+  },
+  {
+    "category": "Eşyalar",
+    "citizenWord": "Tarak",
+    "imposterWord": "Fırça"
+  },
+  {
+    "category": "Eşyalar",
+    "citizenWord": "Merdiven",
+    "imposterWord": "Basamak"
+  },
+  {
+    "category": "Teknoloji",
+    "citizenWord": "Telefon",
+    "imposterWord": "Tablet"
+  },
+  {
+    "category": "Teknoloji",
+    "citizenWord": "Dizüstü Bilgisayar",
+    "imposterWord": "Masaüstü Bilgisayar"
+  },
+  {
+    "category": "Teknoloji",
+    "citizenWord": "Wi-Fi",
+    "imposterWord": "Bluetooth"
+  },
+  {
+    "category": "Teknoloji",
+    "citizenWord": "E-posta",
+    "imposterWord": "Mektup"
+  },
+  {
+    "category": "Teknoloji",
+    "citizenWord": "Facebook",
+    "imposterWord": "Instagram"
+  },
+  {
+    "category": "Teknoloji",
+    "citizenWord": "Google",
+    "imposterWord": "Bing"
+  },
+  {
+    "category": "Teknoloji",
+    "citizenWord": "Apple",
+    "imposterWord": "Android"
+  },
+  {
+    "category": "Teknoloji",
+    "citizenWord": "Klavye",
+    "imposterWord": "Fare"
+  },
+  {
+    "category": "Teknoloji",
+    "citizenWord": "Ekran",
+    "imposterWord": "Projeksiyon"
+  },
+  {
+    "category": "Teknoloji",
+    "citizenWord": "Kamera",
+    "imposterWord": "Göz"
+  },
+  {
+    "category": "Teknoloji",
+    "citizenWord": "Pil",
+    "imposterWord": "Şarj Aleti"
+  },
+  {
+    "category": "Teknoloji",
+    "citizenWord": "Kod",
+    "imposterWord": "Şifre"
+  },
+  {
+    "category": "Teknoloji",
+    "citizenWord": "Virüs",
+    "imposterWord": "Hata"
+  },
+  {
+    "category": "Teknoloji",
+    "citizenWord": "Robot",
+    "imposterWord": "Yapay Zekâ"
+  },
+  {
+    "category": "Teknoloji",
+    "citizenWord": "Roket",
+    "imposterWord": "Uçak"
+  },
+  {
+    "category": "Teknoloji",
+    "citizenWord": "Radyo",
+    "imposterWord": "Podcast"
+  },
+  {
+    "category": "Teknoloji",
+    "citizenWord": "Televizyon",
+    "imposterWord": "Film"
+  },
+  {
+    "category": "Teknoloji",
+    "citizenWord": "Oyun",
+    "imposterWord": "Spor"
+  },
+  {
+    "category": "Teknoloji",
+    "citizenWord": "İndirme",
+    "imposterWord": "Yükleme"
+  },
+  {
+    "category": "Teknoloji",
+    "citizenWord": "Tıklama",
+    "imposterWord": "Dokunma"
+  },
+  {
+    "category": "Doğa",
+    "citizenWord": "Güneş",
+    "imposterWord": "Ay"
+  },
+  {
+    "category": "Doğa",
+    "citizenWord": "Yağmur",
+    "imposterWord": "Kar"
+  },
+  {
+    "category": "Doğa",
+    "citizenWord": "Ağaç",
+    "imposterWord": "Çiçek"
+  },
+  {
+    "category": "Doğa",
+    "citizenWord": "Okyanus",
+    "imposterWord": "Nehir"
+  },
+  {
+    "category": "Doğa",
+    "citizenWord": "Dağ",
+    "imposterWord": "Volkan"
+  },
+  {
+    "category": "Doğa",
+    "citizenWord": "Ateş",
+    "imposterWord": "Duman"
+  },
+  {
+    "category": "Doğa",
+    "citizenWord": "Rüzgar",
+    "imposterWord": "Fırtına"
+  },
+  {
+    "category": "Doğa",
+    "citizenWord": "Kum",
+    "imposterWord": "Toprak"
+  },
+  {
+    "category": "Doğa",
+    "citizenWord": "Altın",
+    "imposterWord": "Gümüş"
+  },
+  {
+    "category": "Doğa",
+    "citizenWord": "Elmas",
+    "imposterWord": "İnci"
+  },
+  {
+    "category": "Doğa",
+    "citizenWord": "Yıldız",
+    "imposterWord": "Gezegen"
+  },
+  {
+    "category": "Doğa",
+    "citizenWord": "Bulut",
+    "imposterWord": "Sis"
+  },
+  {
+    "category": "Doğa",
+    "citizenWord": "Buz",
+    "imposterWord": "Su"
+  },
+  {
+    "category": "Doğa",
+    "citizenWord": "Yaprak",
+    "imposterWord": "Tüy"
+  },
+  {
+    "category": "Doğa",
+    "citizenWord": "Taş",
+    "imposterWord": "Kaya"
+  },
+  {
+    "category": "Doğa",
+    "citizenWord": "Mağara",
+    "imposterWord": "Tünel"
+  },
+  {
+    "category": "Doğa",
+    "citizenWord": "Çöl",
+    "imposterWord": "Plaj"
+  },
+  {
+    "category": "Doğa",
+    "citizenWord": "Orman",
+    "imposterWord": "Cangıl"
+  },
+  {
+    "category": "Doğa",
+    "citizenWord": "Gök Gürültüsü",
+    "imposterWord": "Şimşek"
+  },
+  {
+    "category": "Doğa",
+    "citizenWord": "Gökkuşağı",
+    "imposterWord": "Kutup Işıkları"
+  },
+  {
+    "category": "Absürt",
+    "citizenWord": "Osuruk",
+    "imposterWord": "Geğirme"
+  },
+  {
+    "category": "Absürt",
+    "citizenWord": "Tuvalet",
+    "imposterWord": "Çöp Kovası"
+  },
+  {
+    "category": "Absürt",
+    "citizenWord": "Eski Sevgili",
+    "imposterWord": "Şeytan"
+  },
+  {
+    "category": "Absürt",
+    "citizenWord": "Çorap",
+    "imposterWord": "Eldiven"
+  },
+  {
+    "category": "Absürt",
+    "citizenWord": "Burun Kılı",
+    "imposterWord": "Kaş"
+  },
+  {
+    "category": "Absürt",
+    "citizenWord": "Göbek Deliği",
+    "imposterWord": "Meme Ucu"
+  },
+  {
+    "category": "Absürt",
+    "citizenWord": "İç Çamaşırı",
+    "imposterWord": "Bebek Bezi"
+  },
+  {
+    "category": "Absürt",
+    "citizenWord": "Sivilce",
+    "imposterWord": "Ben"
+  },
+  {
+    "category": "Absürt",
+    "citizenWord": "Kepek",
+    "imposterWord": "Kar"
+  },
+  {
+    "category": "Absürt",
+    "citizenWord": "Horlama",
+    "imposterWord": "Hırlama"
+  },
+  {
+    "category": "Absürt",
+    "citizenWord": "Salya",
+    "imposterWord": "Ter"
+  },
+  {
+    "category": "Absürt",
+    "citizenWord": "Muz",
+    "imposterWord": "Sosis"
+  },
+  {
+    "category": "Absürt",
+    "citizenWord": "Tavuk Nugget",
+    "imposterWord": "Altın Külçe"
+  },
+  {
+    "category": "Absürt",
+    "citizenWord": "Ayak Tırnağı",
+    "imposterWord": "El Tırnağı"
+  },
+  {
+    "category": "Absürt",
+    "citizenWord": "Vampir",
+    "imposterWord": "Sivrisinek"
+  },
+  {
+    "category": "Absürt",
+    "citizenWord": "Zombi",
+    "imposterWord": "Uykusuz"
+  },
+  {
+    "category": "Absürt",
+    "citizenWord": "Palyaço",
+    "imposterWord": "Politikacı"
+  },
+  {
+    "category": "Absürt",
+    "citizenWord": "Mumya",
+    "imposterWord": "Tuvalet Kağıdı"
+  },
+  {
+    "category": "Absürt",
+    "citizenWord": "Hapşırma",
+    "imposterWord": "Öksürme"
+  },
+  {
+    "category": "Absürt",
+    "citizenWord": "Hıçkırık",
+    "imposterWord": "Geğirme"
+  },
+  {
+    "category": "Sporlar",
+    "citizenWord": "Futbol",
+    "imposterWord": "Ragbi"
+  },
+  {
+    "category": "Sporlar",
+    "citizenWord": "Basketbol",
+    "imposterWord": "Voleybol"
+  },
+  {
+    "category": "Sporlar",
+    "citizenWord": "Tenis",
+    "imposterWord": "Badminton"
+  },
+  {
+    "category": "Sporlar",
+    "citizenWord": "Beyzbol",
+    "imposterWord": "Kriket"
+  },
+  {
+    "category": "Sporlar",
+    "citizenWord": "Kayak",
+    "imposterWord": "Snowboard"
+  },
+  {
+    "category": "Sporlar",
+    "citizenWord": "Sörf",
+    "imposterWord": "Yüzme"
+  },
+  {
+    "category": "Sporlar",
+    "citizenWord": "Boks",
+    "imposterWord": "Güreş"
+  },
+  {
+    "category": "Sporlar",
+    "citizenWord": "Satranç",
+    "imposterWord": "Dama"
+  },
+  {
+    "category": "Sporlar",
+    "citizenWord": "Poker",
+    "imposterWord": "Blackjack"
+  },
+  {
+    "category": "Sporlar",
+    "citizenWord": "Bisiklet",
+    "imposterWord": "Kaykay"
+  },
+  {
+    "category": "Sporlar",
+    "citizenWord": "Maraton",
+    "imposterWord": "Sprint"
+  },
+  {
+    "category": "Sporlar",
+    "citizenWord": "Golf",
+    "imposterWord": "Mini Golf"
+  },
+  {
+    "category": "Sporlar",
+    "citizenWord": "Bowling",
+    "imposterWord": "Dart"
+  },
+  {
+    "category": "Sporlar",
+    "citizenWord": "Buz Hokeyi",
+    "imposterWord": "Paten Hokeyi"
+  },
+  {
+    "category": "Sporlar",
+    "citizenWord": "Masa Tenisi",
+    "imposterWord": "Hava Hokeyi"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "citizenWord": "Gitar",
+    "imposterWord": "Ukulele"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "citizenWord": "Piyano",
+    "imposterWord": "Klavye"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "citizenWord": "Keman",
+    "imposterWord": "Viyola"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "citizenWord": "Davul",
+    "imposterWord": "Tef"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "citizenWord": "Flüt",
+    "imposterWord": "Klarnet"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "citizenWord": "Mikrofon",
+    "imposterWord": "Hoparlör"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "citizenWord": "Konser",
+    "imposterWord": "Festival"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "citizenWord": "Resim",
+    "imposterWord": "Heykel"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "citizenWord": "Fotoğrafçılık",
+    "imposterWord": "Selfie"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "citizenWord": "Bale",
+    "imposterWord": "Opera"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "citizenWord": "Koro",
+    "imposterWord": "Solo"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "citizenWord": "DJ",
+    "imposterWord": "Müzik Grubu"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "citizenWord": "Pop",
+    "imposterWord": "Rock"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "citizenWord": "Caz",
+    "imposterWord": "Blues"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "citizenWord": "Rap",
+    "imposterWord": "Şiir"
+  },
+  {
+    "category": "Müzik ve Sanat",
+    "citizenWord": "Stüdyo",
+    "imposterWord": "Sahne"
+  },
+  {
+    "category": "Ulaşım ve Seyahat",
+    "citizenWord": "Uçak",
+    "imposterWord": "Helikopter"
+  },
+  {
+    "category": "Ulaşım ve Seyahat",
+    "citizenWord": "Tren",
+    "imposterWord": "Metro"
+  },
+  {
+    "category": "Ulaşım ve Seyahat",
+    "citizenWord": "Otobüs",
+    "imposterWord": "Tur Otobüsü"
+  },
+  {
+    "category": "Ulaşım ve Seyahat",
+    "citizenWord": "Taksi",
+    "imposterWord": "Paylaşımlı Araç"
+  },
+  {
+    "category": "Ulaşım ve Seyahat",
+    "citizenWord": "Bisiklet",
+    "imposterWord": "Scooter"
+  },
+  {
+    "category": "Ulaşım ve Seyahat",
+    "citizenWord": "Araba",
+    "imposterWord": "Kamyon"
+  },
+  {
+    "category": "Ulaşım ve Seyahat",
+    "citizenWord": "Gemi",
+    "imposterWord": "Feribot"
+  },
+  {
+    "category": "Ulaşım ve Seyahat",
+    "citizenWord": "Pasaport",
+    "imposterWord": "Vize"
+  },
+  {
+    "category": "Ulaşım ve Seyahat",
+    "citizenWord": "Valiz",
+    "imposterWord": "Sırt Çantası"
+  },
+  {
+    "category": "Ulaşım ve Seyahat",
+    "citizenWord": "Bilet",
+    "imposterWord": "Biniş Kartı"
+  },
+  {
+    "category": "Ulaşım ve Seyahat",
+    "citizenWord": "Harita",
+    "imposterWord": "GPS"
+  },
+  {
+    "category": "Ulaşım ve Seyahat",
+    "citizenWord": "Otel",
+    "imposterWord": "Hostel"
+  },
+  {
+    "category": "Ulaşım ve Seyahat",
+    "citizenWord": "Check-in",
+    "imposterWord": "Güvenlik Kontrolü"
+  },
+  {
+    "category": "Ulaşım ve Seyahat",
+    "citizenWord": "Cam Kenarı Koltuk",
+    "imposterWord": "Koridor Koltuğu"
+  },
+  {
+    "category": "Ulaşım ve Seyahat",
+    "citizenWord": "Yol Gezisi",
+    "imposterWord": "Gemi Turu"
+  },
+  {
+    "category": "Kavramlar",
+    "citizenWord": "Aşk",
+    "imposterWord": "Dostluk"
+  },
+  {
+    "category": "Kavramlar",
+    "citizenWord": "Başarı",
+    "imposterWord": "Mutluluk"
+  },
+  {
+    "category": "Kavramlar",
+    "citizenWord": "Özgürlük",
+    "imposterWord": "Kaos"
+  },
+  {
+    "category": "Kavramlar",
+    "citizenWord": "Rüya",
+    "imposterWord": "Anı"
+  },
+  {
+    "category": "Kavramlar",
+    "citizenWord": "Zaman",
+    "imposterWord": "Para"
+  },
+  {
+    "category": "Kavramlar",
+    "citizenWord": "Sanat",
+    "imposterWord": "Tasarım"
+  },
+  {
+    "category": "Kavramlar",
+    "citizenWord": "Gerçek",
+    "imposterWord": "Olg u"
+  },
+  {
+    "category": "Kavramlar",
+    "citizenWord": "Yalan",
+    "imposterWord": "Kurgu"
+  },
+  {
+    "category": "Kavramlar",
+    "citizenWord": "Dahi",
+    "imposterWord": "Yetenek"
+  },
+  {
+    "category": "Kavramlar",
+    "citizenWord": "Bilgelik",
+    "imposterWord": "Bilgi"
+  },
+  {
+    "category": "Kavramlar",
+    "citizenWord": "Cesur",
+    "imposterWord": "Aptal"
+  },
+  {
+    "category": "Kavramlar",
+    "citizenWord": "Gelecek",
+    "imposterWord": "Geçmiş"
+  },
+  {
+    "category": "Kavramlar",
+    "citizenWord": "Ruh",
+    "imposterWord": "Zihin"
+  },
+  {
+    "category": "Kavramlar",
+    "citizenWord": "Savaş",
+    "imposterWord": "Tartışma"
+  },
+  {
+    "category": "Kavramlar",
+    "citizenWord": "Barış",
+    "imposterWord": "Uyku"
+  },
+  {
+    "category": "Kavramlar",
+    "citizenWord": "Umut",
+    "imposterWord": "Plan"
+  },
+  {
+    "category": "Kavramlar",
+    "citizenWord": "Şans",
+    "imposterWord": "Yetenek"
+  },
+  {
+    "category": "Kavramlar",
+    "citizenWord": "Korku",
+    "imposterWord": "Saygı"
+  },
+  {
+    "category": "Kavramlar",
+    "citizenWord": "Hayat",
+    "imposterWord": "Film"
+  },
+  {
+    "category": "Kavramlar",
+    "citizenWord": "Ölüm",
+    "imposterWord": "Vergi"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Pelé",
+    "imposterWord": "Diego Maradona"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Lionel Messi",
+    "imposterWord": "Cristiano Ronaldo"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Johan Cruyff",
+    "imposterWord": "Michel Platini"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Franz Beckenbauer",
+    "imposterWord": "Paolo Maldini"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Zinedine Zidane",
+    "imposterWord": "Kaká"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Ronaldo (R9)",
+    "imposterWord": "Romário"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Thierry Henry",
+    "imposterWord": "Dennis Bergkamp"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Roberto Carlos",
+    "imposterWord": "Cafu"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Xavi",
+    "imposterWord": "Andrés Iniesta"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Iker Casillas",
+    "imposterWord": "Gianluigi Buffon"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Sergio Ramos",
+    "imposterWord": "Virgil van Dijk"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Luka Modrić",
+    "imposterWord": "Andrea Pirlo"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Robert Lewandowski",
+    "imposterWord": "Karim Benzema"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Manuel Neuer",
+    "imposterWord": "Petr Čech"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Steven Gerrard",
+    "imposterWord": "Frank Lampard"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Paul Scholes",
+    "imposterWord": "Ryan Giggs"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Alessandro Del Piero",
+    "imposterWord": "Francesco Totti"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Andrea Pirlo",
+    "imposterWord": "Xabi Alonso"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Didier Drogba",
+    "imposterWord": "Samuel Eto'o"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Neymar",
+    "imposterWord": "Kylian Mbappé"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Luis Suárez",
+    "imposterWord": "Edinson Cavani"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Harry Kane",
+    "imposterWord": "Alan Shearer"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Roberto Baggio",
+    "imposterWord": "Rivaldo"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Raúl",
+    "imposterWord": "Fernando Morientes"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Luís Figo",
+    "imposterWord": "Franck Ribéry"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Carles Puyol",
+    "imposterWord": "Fernando Hierro"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Claude Makélélé",
+    "imposterWord": "N'Golo Kanté"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Mohamed Salah",
+    "imposterWord": "Sadio Mané"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Antoine Griezmann",
+    "imposterWord": "Eden Hazard"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Mesut Özil",
+    "imposterWord": "Ángel Di María"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Nemanja Vidić",
+    "imposterWord": "Rio Ferdinand"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Gennaro Gattuso",
+    "imposterWord": "Clarence Seedorf"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Alessandro Nesta",
+    "imposterWord": "Fabio Cannavaro"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Zlatan Ibrahimović",
+    "imposterWord": "Edin Džeko"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Diego Forlán",
+    "imposterWord": "Samuel Eto'o"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Carlos Tevez",
+    "imposterWord": "Sergio Agüero"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Forlán",
+    "imposterWord": "Drogba"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Wayne Rooney",
+    "imposterWord": "Ruud van Nistelrooy"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Paolo Rossi",
+    "imposterWord": "Marco van Basten"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Ruud Gullit",
+    "imposterWord": "Frank Rijkaard"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Hakan Şükür",
+    "imposterWord": "Metin Oktay"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Lefter Küçükandonyadis",
+    "imposterWord": "Alex de Souza"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Rüştü Reçber",
+    "imposterWord": "Volkan Demirel"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Tugay Kerimoğlu",
+    "imposterWord": "Emre Belözoğlu"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Sergen Yalçın",
+    "imposterWord": "Oğuz Çetin"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Arda Turan",
+    "imposterWord": "Burak Yılmaz"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Gheorghe Hagi",
+    "imposterWord": "Wesley Sneijder"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Alex de Souza",
+    "imposterWord": "Lefter"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Rıza Çalımbay",
+    "imposterWord": "Bülent Korkmaz"
+  },
+  {
+    "category": "Futbolcular",
+    "citizenWord": "Burak Yılmaz",
+    "imposterWord": "Arda Turan"
+  },
+  {
+    "category": "Futbol Kulüpleri",
+    "citizenWord": "Real Madrid",
+    "imposterWord": "Barcelona"
+  },
+  {
+    "category": "Futbol Kulüpleri",
+    "citizenWord": "Manchester United",
+    "imposterWord": "Liverpool"
+  },
+  {
+    "category": "Futbol Kulüpleri",
+    "citizenWord": "Bayern Münih",
+    "imposterWord": "Borussia Dortmund"
+  },
+  {
+    "category": "Futbol Kulüpleri",
+    "citizenWord": "Juventus",
+    "imposterWord": "AC Milan"
+  },
+  {
+    "category": "Futbol Kulüpleri",
+    "citizenWord": "Inter",
+    "imposterWord": "Roma"
+  },
+  {
+    "category": "Futbol Kulüpleri",
+    "citizenWord": "Arsenal",
+    "imposterWord": "Chelsea"
+  },
+  {
+    "category": "Futbol Kulüpleri",
+    "citizenWord": "Manchester City",
+    "imposterWord": "Paris Saint-Germain"
+  },
+  {
+    "category": "Futbol Kulüpleri",
+    "citizenWord": "Tottenham",
+    "imposterWord": "Atletico Madrid"
+  },
+  {
+    "category": "Futbol Kulüpleri",
+    "citizenWord": "Ajax",
+    "imposterWord": "PSV"
+  },
+  {
+    "category": "Futbol Kulüpleri",
+    "citizenWord": "Benfica",
+    "imposterWord": "Porto"
+  },
+  {
+    "category": "Futbol Kulüpleri",
+    "citizenWord": "Galatasaray",
+    "imposterWord": "Fenerbahçe"
+  },
+  {
+    "category": "Futbol Kulüpleri",
+    "citizenWord": "Beşiktaş",
+    "imposterWord": "Trabzonspor"
+  },
+  {
+    "category": "Futbol Kulüpleri",
+    "citizenWord": "Bursaspor",
+    "imposterWord": "Başakşehir"
+  },
+  {
+    "category": "Futbol Kulüpleri",
+    "citizenWord": "Adanaspor",
+    "imposterWord": "Adana Demirspor"
+  },
+  {
+    "category": "Futbol Kulüpleri",
+    "citizenWord": "Göztepe",
+    "imposterWord": "Altay"
+  },
+  {
+    "category": "Futbol Kulüpleri",
+    "citizenWord": "Napoli",
+    "imposterWord": "Lazio"
+  },
+  {
+    "category": "Futbol Kulüpleri",
+    "citizenWord": "Sevilla",
+    "imposterWord": "Valencia"
+  },
+  {
+    "category": "Futbol Kulüpleri",
+    "citizenWord": "Leeds United",
+    "imposterWord": "Nottingham Forest"
+  },
+  {
+    "category": "Futbol Kulüpleri",
+    "citizenWord": "Celtic",
+    "imposterWord": "Rangers"
+  },
+  {
+    "category": "Futbol Kulüpleri",
+    "citizenWord": "Monaco",
+    "imposterWord": "Lyon"
+  },
+  {
+    "category": "Futbol Kulüpleri",
+    "citizenWord": "Fiorentina",
+    "imposterWord": "Torino"
+  },
+  {
+    "category": "Futbol Kulüpleri",
+    "citizenWord": "Villarreal",
+    "imposterWord": "Real Sociedad"
+  },
+  {
+    "category": "Futbol Kulüpleri",
+    "citizenWord": "West Ham",
+    "imposterWord": "Everton"
+  },
+  {
+    "category": "Futbol Kulüpleri",
+    "citizenWord": "Hamburg",
+    "imposterWord": "Werder Bremen"
+  },
+  {
+    "category": "Futbol Kulüpleri",
+    "citizenWord": "Marseille",
+    "imposterWord": "Bordeaux"
+  }
+]

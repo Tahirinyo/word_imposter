@@ -3,40 +3,28 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Kelime Casusları - Word Imposter</title>
-    <meta name="description" content="Kelime tabanlı sosyal çıkarım oyunu. Hainleri ve Gizemlileri bulun!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="color-scheme" content="dark">
+    <title>Who Is the Impostor? — Kelime Oyunu</title>
+    <meta name="description" content="Arkadaşlarınla oynayabileceğin hızlı, kelime tabanlı sosyal çıkarım oyunu.">
+    <meta name="theme-color" content="#101113">
     <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎭</text></svg>">
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2317191c'/><circle cx='50' cy='50' r='27' fill='none' stroke='%23e06c61' stroke-width='8'/><path d='M50 23v54' stroke='%23f5f0e8' stroke-width='8'/></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css?v=5">
 </head>
 
 <body>
-    <div id="app"></div>
-    <!-- Firebase SDK -->
-    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-database-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-auth-compat.js"></script>
-    <!-- Core Modules -->
-    <script src="js/audio.js?v=5"></script>
+    <div id="app">
+        <main class="loading-screen" aria-live="polite">
+            <div class="loading-spinner" aria-hidden="true">◌</div>
+            <p>Oyun yükleniyor…</p>
+        </main>
+    </div>
 
-    <!-- App Scripts -->
-    <script src="js/words.js?v=5"></script>
-    <script src="js/data.js?v=5"></script>
-    <script src="js/utils.js?v=5"></script>
-    <script src="js/firebase.js?v=5"></script>
-    <script src="js/room.js?v=5"></script>
-    <script src="js/game.js?v=5"></script>
-    <!-- UI Modules (modular architecture) -->
-    <script src="js/ui/core.js?v=5"></script>
-    <script src="js/ui/home.js?v=5"></script>
-    <script src="js/ui/lobby.js?v=5"></script>
-    <script src="js/ui/game.js?v=5"></script>
-    <script src="js/ui/modals.js?v=5"></script>
-    <script src="js/app.js?v=5"></script>
+    <!-- Vite module entry point -->
+    <script type="module" src="/src/main.js"></script>
 </body>
 
 </html>

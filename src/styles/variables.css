@@ -1,0 +1,72 @@
+/**
+ * Who Is the Impostor? - design tokens
+ * Midnight Social Deduction visual system
+ */
+
+:root {
+    color-scheme: dark;
+
+    /* Approved role-based palette */
+    --bg-canvas: #101113;
+    --bg-raised: #17191c;
+    --surface-1: #1d2024;
+    --surface-2: #272a2f;
+    --border-subtle: #363a40;
+    --border-strong: #50555c;
+    --text-primary: #f5f0e8;
+    --text-muted: #a9a69f;
+    --accent-coral: #e06c61;
+    --danger: #c94d49;
+    --accent-amber: #d8a14b;
+    --success: #77a889;
+    --warning: #c99a51;
+    --focus: #d9c7a0;
+
+    /* Compatibility aliases for established component names */
+    --bg-primary: var(--bg-canvas);
+    --bg-secondary: var(--bg-raised);
+    --bg-card: var(--surface-1);
+    --bg-glass: var(--surface-1);
+    --text-secondary: var(--text-muted);
+    --accent-primary: var(--accent-coral);
+    --accent-secondary: var(--accent-amber);
+    --accent-gold: var(--accent-amber);
+    --accent-emerald: var(--success);
+    --accent-rose: var(--danger);
+    --accent-cyan: var(--focus);
+    --color-citizen: var(--success);
+    --color-imposter: var(--danger);
+    --color-mrwhite: var(--accent-amber);
+
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+    --radius-xl: 20px;
+    --radius-full: 9999px;
+
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.24);
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.24);
+    --shadow-lg: 0 22px 60px rgba(0, 0, 0, 0.32);
+
+    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: clamp(1.8rem, 5vw, 2.35rem);
+    --font-size-4xl: clamp(2.15rem, 7vw, 3.4rem);
+    --font-size-5xl: clamp(2.8rem, 9vw, 5.4rem);
+
+    --transition-fast: 150ms ease;
+    --transition-base: 240ms ease;
+    --transition-slow: 420ms ease;
+}
